@@ -1,0 +1,10 @@
+"ParticleIntent {green|light} "
+"ParticleIntent {red|light} "
+ParticleIntent {humidity|sensor}
+ParticleIntent {temperature|sensor}
+ParticleIntent turn {off|onoff} {green|light} light
+ParticleIntent turn {off|onoff} {red|light} light
+ParticleIntent turn {on|onoff} {green|light} light
+ParticleIntent turn {on|onoff} {red|light} light
+ParticleIntent what is the {humidity|sensor} here
+ParticleIntent what is the {temperature|sensor} here

@@ -1,0 +1,102 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "fireworks",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ParticleStateIntent",
+                    "slots": [
+                        {
+                            "name": "state",
+                            "type": "LIST_OF_STATES"
+                        }
+                    ],
+                    "samples": [
+                        "ParticleStateIntent turn {state}"
+                    ]
+                },
+                {
+                    "name": "ParticleColorIntent",
+                    "slots": [
+                        {
+                            "name": "color",
+                            "type": "LIST_OF_COLORS"
+                        }
+                    ],
+                    "samples": [
+                        "ParticleColorIntent change color to {color}",
+                        "ParticleColorIntent change to {color}",
+                        "ParticleColorIntent turn color {color}",
+                        "ParticleColorIntent turn {color}"
+                    ]
+                },
+                {
+                    "name": "ParticleBrightnessIntent",
+                    "slots": [
+                        {
+                            "name": "brightness",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "ParticleBrightnessIntent set brightness level to {brightness}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_STATES",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "on"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_COLORS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "white"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "red"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
